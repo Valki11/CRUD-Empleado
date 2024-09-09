@@ -4,7 +4,7 @@
  */
 package vista;
 
-import empleados.*;
+import java.sql.SQLException;
 
 /**
  *
@@ -15,8 +15,9 @@ public class main {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
-        // TODO code application logic here
+    public static void main(String[] args) throws SQLException {
+        frm_empleados frm = new frm_empleados();
+       frm.show();
     }
     
 }
